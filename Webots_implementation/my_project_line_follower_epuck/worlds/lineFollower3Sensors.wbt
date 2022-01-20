@@ -1,0 +1,62 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.031035464611593174 -0.920181101552165 -0.39026086183806163 2.941870067164028
+  position -0.6718818653079638 0.502231560936952 -0.6691620809283158
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorAppearance PBRAppearance {
+    roughness 1
+    roughnessMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2021b/projects/appearances/protos/textures/parquetry/chequered_parquetry_roughness.jpg"
+      ]
+    }
+    metalness 0
+    normalMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2021b/projects/appearances/protos/textures/parquetry/chequered_parquetry_normal.jpg"
+      ]
+    }
+    occlusionMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2021b/projects/appearances/protos/textures/parquetry/chequered_parquetry_occlusion.jpg"
+      ]
+    }
+  }
+}
+E-puck {
+  hidden position_0_0 29.703588237519597
+  hidden position_0_1 29.236288767351176
+  hidden rotation_1 -1 0 0 4.570847008801251
+  hidden rotation_2 -1 0 0 4.103547538632831
+  translation -0.5089151461156906 -0.0002505836080247195 -0.0891267472794207
+  rotation 0.017649547039757317 -0.9998398275201058 0.0029686350156875956 0.33602344057198713
+  controller "Line_follower_3_Sensors"
+  groundSensorsSlot [
+    DistanceSensor {
+      translation 0 -0.01 0
+      name "leftIR"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0.01 0
+      name "rightIR"
+      type "infra-red"
+    }
+    DistanceSensor {
+      name "centerIR"
+      type "infra-red"
+    }
+  ]
+}
+TrackOne {
+  translation 0 -0.0075 0
+}
