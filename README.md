@@ -1,7 +1,7 @@
 # LineFollowerRobot
 
 The projet is a simulation of a line folllower robot in Webots. 
-The robot use is E-Puck. 
+The robot used is E-Puck. 
 The controller / code is written in Python. 
 
 This is our world with the E-Puck robot:
